@@ -1,0 +1,154 @@
+:root {
+  --background-color: #1c1c1e;
+  --secbackground-color: #8b8e94;
+  --button: #1d0761;
+  --button-text: #fffffe;
+  --buttonSec: #72757e;
+  --headline: #000000;
+  --paragrahp: #053d85;
+  --cardbackground: #94a1b2;
+  --cardtext: #fffffe;
+  --h2color: #72757e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.menu {
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+button {
+  padding: 10px;
+  width: 110px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+  font-weight: 600;
+  color: var(--button-text);
+  background-color: var(--button);
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: var(--buttonSec);
+}
+
+h1,
+h2 {
+  font-size: 34px;
+  color: var(--headline);
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  color: var(--h2color);
+}
+
+.card p {
+  color: var(--cardtext);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 270px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: var(--cardbackground);
+}
+
+.imgproj img {
+  height: 204px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card p {
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.moreproj {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+footer {
+  min-height: 5vh;
+  background-color: var(--secbackground-color);
+  position: relative;
+  padding: 20px;
+}
+
+footer h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer h1 img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 30px;
+  list-style: none;
+}
+
+.social-medias li:hover {
+  transform: scale(1.5);
+}
